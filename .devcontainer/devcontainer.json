@@ -1,4 +1,6 @@
 {
 		"name": "Playwright",
-		"image": "mcr.microsoft.com/playwright/python:v1.45.1-jammy"
+		"image": "mcr.microsoft.com/playwright/python:v1.45.1-jammy",
+		"postCreateCommand": "pip3 install --user -r requirements.txt",
+		"remoteUser": "pwuser"
 }
