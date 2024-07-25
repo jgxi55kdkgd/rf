@@ -1,0 +1,29 @@
+1721922683390	geckodriver	INFO	Listening on 127.0.0.1:54897
+1721922683397	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... te" "--remote-debugging-port" "35371" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRditnU"
+[2414, Main Thread] WARNING: Locale not supported by C library.
+	Using the fallback 'C' locale.: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:2414): Gtk-WARNING **: 15:51:23.411: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: libpci missing
+1721922683848	Marionette	INFO	Marionette enabled
+1721922684023	Marionette	INFO	Listening on port 34149
+WebDriver BiDi listening on ws://127.0.0.1:35371
+Read port: 34149
+1721922684183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:35371/devtools/browser/a38bd5c4-2d74-4994-bb39-c08db6055188
+1721922692439	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+restoreWindow@chrome://remote/content/marionette/driver.sys.mjs:3576:9
+GeckoDriver.prototype.setWindowRect@chrome://remote/content/marionette/driver.sys.mjs:1164:13
+1721922698149	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+restoreWindow@chrome://remote/content/marionette/driver.sys.mjs:3576:9
+GeckoDriver.prototype.setWindowRect@chrome://remote/content/marionette/driver.sys.mjs:1164:13
+1721922701406	Marionette	INFO	Stopped listening on port 34149
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt

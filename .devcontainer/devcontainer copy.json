@@ -1,16 +1,13 @@
 {
 		"name": "Playwright",
-		"build": {
-			"dockerfile": "Dockerfile"
-		},
+		"image": "mcr.microsoft.com/playwright/python:v1.45.1-jammy",
 		"postCreateCommand": "pip3 install --user -r requirements.txt",
 		"remoteUser": "pwuser",
 		"customizations": {
 			"vscode": {
 				"extensions": [
 					"ms-python.python",
-					"robocorp.robotframework-lsp",
-					"ms-vscode.live-server"
+					"robocorp.robotframework-lsp"
 				]
 			}
 		}
