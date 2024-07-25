@@ -1,0 +1,4 @@
+{
+		"name": "Playwright",
+		"image": "mcr.microsoft.com/playwright/python:v1.45.1-jammy"
+}
