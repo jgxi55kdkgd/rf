@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation       This is some basic info about the whole suite
 Library             SeleniumLibrary
+Library    Screenshot
 
 
 *** Variables ***
@@ -16,11 +17,19 @@ Should be able to add new customer
 
     #open the browser
     log                     Starting the test case!
-    open browser            https://automationplayground.com/crm/       firefox
+    open browser            https://automationplayground.com/crm/       chrome
 
     # resize browser window for recording
     Set window position     x=341   y=169
     Set window size         width=1935  height=1090
+    Page Should Contain    Customers
+    Click Link              Sign In
+    Sleep    3s
+    Capture Page Screenshot
+    Page Should Contain    Login
+    Input Text    id=email-id    Keith@mad.world
+    Input Text    id=password    sdcsdc
+    Capture Page Screenshot
 
     sleep               3s
     close browser
