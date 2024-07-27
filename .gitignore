@@ -1,2 +1,6 @@
 CRM/Results
-
+*.log
+*.png
+*.xml
+log.html
+report.html

@@ -29,7 +29,14 @@ Should be able to add new customer
     Page Should Contain    Login
     Input Text    id=email-id    Keith@mad.world
     Input Text    id=password    sdcsdc
+    Click Button    Submit
     Capture Page Screenshot
+    Wait Until Page Contains    Our Happy Customers
+    Click Link    New Customer
+    Page Should Contain    Add Customer
+    Capture Page Screenshot
+
+
 
     sleep               3s
     close browser
